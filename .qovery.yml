@@ -1,0 +1,16 @@
+---
+application:
+  name: "tbot"
+  project: "tbot"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "images"
+    size: "200"
+    type: "fast_ssd"
+    mount_point: "/mnt/images"
+routers:
+- name: "main-tbot"
+  routes:
+  - application_name: "tbot"
+    paths:
+    - "/*"
